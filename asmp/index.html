@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Форма ежедневного доклада капитана судна</title>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<!--    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">-->
+    <meta http-equiv="Cache-Control" content="private">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta name="Resource-type" content="document">
+    <meta name="document-state" content="dynamic">
+    <link rel="StyleSheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <script type="text/javascript" src="/js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/js/script.js?333423"></script>
+</head>
+<body>
+<div class=home>
+<h1 align=center>Форма ежедневного доклада капитана судна</h1>
+<table align=center class=data_table>
+    <tr>
+	<td align=right valign=top><font class=main><b>Тип отчета:</b></font></td>
+	<td align="left" valign="top">
+	    <SELECT id="select_type" style="width: 600px;">
+		<OPTION VALUE=0>Не выбрана.
+		<OPTION VALUE=1>Информация при следовании судна в акваторию СМП.
+		<OPTION VALUE=2>Информация при входе судна в акваторию СМП.
+		<OPTION VALUE=3>Информация при выходе из морского порта Российской Федерации,находящегося в акватории СМП, или входе в акваторию СМП с внутренних водных путей.
+		<OPTION VALUE=4>Информация после пересечения границ акватории СМП и до выхода из акватории СМП (прибытия в морской порт, расположенный в акватории СМП).
+		<OPTION VALUE=5>Информация во время плавания в акватории СМП при заходе в морской порт Российской Федерации, находящийся в акватории СМП.
+		<OPTION VALUE=6>Информация после осуществления плавания в акватории СМП при выходе из акватории СМП, включая заход на внутренние водные пути РФ.
+	    </SELECT>
+	</td>
+    </tr>
+    <tr>
+	<td align=right valign=top colspan=2><div id="form"></div></td>
+    </tr>
+    <tr>
+	<td align=center colspan=2><button id="list">Сформировать отчет</button></td>
+    </tr>
+</table>
+<div id="list_text"></div>
+</div>
+</body>
+</html>

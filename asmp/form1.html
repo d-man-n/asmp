@@ -1,0 +1,135 @@
+<head>
+<meta http-equiv="Cache-Control" content="private">
+<script type="text/javascript" src="/js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/script.js?244423"></script>
+</head>
+<table align=center class=data_table>
+    <tr>
+	<td align=right valign=top><font class=main>1. Название судна:</font></td>
+	<td align="left" valign="top"><input type="text" name="ship_name" id="ship_name" class="data_field" style="text-transform: uppercase;" placeholder="Название"></td>
+    </tr>
+    <tr>
+	<td align=right valign=top>
+	    <font class=main>2. Номер</font>
+	    <select name=type_num id=type_num>
+		<option value=0>ИМО</option>
+		<option value=1>РМРС</option>
+		<option value=2>РРР</option>
+	    </select>:
+	</td>
+	<td align="left" valign="top"><input type="text" name="ship_imo" id="ship_imo" class="data_field" maxlength="7" placeholder="Номер"></td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>3. Порт или место назначения судна</font></td>
+	<td align=left valign=top><input type="text" name="port1" id="port1" class="data_field" style="text-transform: uppercase;" placeholder="Название"></td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>4. Порт или место отхода судна</font></td>
+	<td align=left valign=top><input type="text" name="port2" id="port2" class="data_field" style="text-transform: uppercase;" placeholder="Название"></td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>5. Максимальная действующая осадка в метрах</font></td>
+	<td align=left valign=top><input type="text" name="draght" id="draght" class="data_field" maxlength="4" placeholder="Метров"></td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>6. Тип и количество в метрических тоннах перевозимого судном груза</font></td>
+	<td align=left valign=top>
+	    <input type="text" name="cargo_type" id="cargo_type" class="data_field1" placeholder="Тип"> : <input type="text" name="cargo_qty" id="cargo_qty" class="data_field2" placeholder="Количество"><br>
+	    <input type="text" name="cargo_type1" id="cargo_type1" class="data_field1" placeholder="Тип"> : <input type="text" name="cargo_qty1" id="cargo_qty1" class="data_field2" placeholder="Количество"><br>
+	    <input type="text" name="cargo_type2" id="cargo_type2" class="data_field1" placeholder="Тип"> : <input type="text" name="cargo_qty2" id="cargo_qty2" class="data_field2" placeholder="Количество"><br>
+	    <input type="text" name="cargo_type3" id="cargo_type3" class="data_field1" placeholder="Тип"> : <input type="text" name="cargo_qty3" id="cargo_qty3" class="data_field2" placeholder="Количество">
+	</td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>7. Наличие, количество в метрических тоннах и класс перевозимых судном опасных грузов (при наличии)</font></td>
+	<td align=left valign=top>
+	    <input type="checkbox" id="no_dang" name="no_dang"> <font class="main">Нет</font>
+	    <div id="dang">
+	    	<input type="text" name="dang_class" id="dang_class" class="data_field1" placeholder="Тип"> : <input type="text" name="dang_qty" id="dang_qty" class="data_field2" placeholder="Количество"><br>
+		<input type="text" name="dang_class1" id="dang_class1" class="data_field1" placeholder="Тип"> : <input type="text" name="dang_qty1" id="dang_qty1" class="data_field2" placeholder="Количество"><br>
+		<input type="text" name="dang_class2" id="dang_class2" class="data_field1" placeholder="Тип"> : <input type="text" name="dang_qty2" id="dang_qty2" class="data_field2" placeholder="Количество"><br>
+		<input type="text" name="dang_class3" id="dang_class3" class="data_field1" placeholder="Тип"> : <input type="text" name="dang_qty3" id="dang_qty3" class="data_field2" placeholder="Количество">
+	    </div>
+	</td>
+    </tr>
+    <tr>
+        <td align=right valign=top><font class=main>8. Запас топлива в метрических тоннах на момент доклада</font></td>
+        <td align=left valign=top>
+            <font class="main">&nbsp;&nbsp;&nbsp;Вид топлива &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Запас, МТ</font><br>
+            <SELECT name="fuel_class" id="fuel_class">
+                <option value=1>ТЯЖЕЛОЕ</option>
+                <option value=2>ЛЕГКОЕ</option>
+                <option value=3>СПГ</option>
+            </SELECT> : <input type="text" maxlength="4" name="fuel_qty" id="fuel_qty" class="data_field2" placeholder="Количество"> <font class="main">МТ</font><br>
+            <SELECT name="fuel_class1" id="fuel_class1">
+                <option value=1>ТЯЖЕЛОЕ</option>
+                <option value=2>ЛЕГКОЕ</option>
+                <option value=3>СПГ</option>
+            </SELECT> : <input type="text" maxlength="4" name="fuel_qty1" id="fuel_qty1" class="data_field2" placeholder="Количество"> <font class="main">МТ</font><br>
+            <SELECT name="fuel_class2" id="fuel_class2">
+                <option value=1>ТЯЖЕЛОЕ</option>
+                <option value=2>ЛЕГКОЕ</option>
+                <option value=3>СПГ</option>
+            </SELECT> : <input type="text" maxlength="4" name="fuel_qty2" id="fuel_qty2" class="data_field2" placeholder="Количество"> <font class="main">МТ</font><br>
+            <SELECT name="fuel_class3" id="fuel_class3">
+                <option value=1>ТЯЖЕЛОЕ</option>
+                <option value=2>ЛЕГКОЕ</option>
+                <option value=3>СПГ</option>
+            </SELECT> : <input type="text" maxlength="4" name="fuel_qty3" id="fuel_qty3" class="data_field2" placeholder="Количество"> <font class="main">МТ</font>
+        </td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>9. Запас пресной воды с учетом пополнения пресной водой от опреснительной установки судна (при наличии)</font></td>
+	<td align=left valign=top><input type="text" name="water_qty" id="water_qty" class="data_field" placeholder="суток"></td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>10. Запас продовольствия и других видов судового снабжения</font></td>
+	<td align=left valign=top>
+	    <input type="text" name="food_class" id="food_class" class="data_field1" placeholder="Тип снабжения"> : <input type="text" name="food_qty" id="food_qty" class="data_field2" placeholder="Количество"><br>
+	    <input type="text" name="food_class1" id="food_class1" class="data_field1" placeholder="Тип снабжения"> : <input type="text" name="food_qty1" id="food_qty1" class="data_field2" placeholder="Количество"><br>
+	    <input type="text" name="food_class2" id="food_class2" class="data_field1" placeholder="Тип снабжения"> : <input type="text" name="food_qty2" id="food_qty2" class="data_field2" placeholder="Количество"><br>
+	    <input type="text" name="food_class3" id="food_class3" class="data_field1" placeholder="Тип снабжения"> : <input type="text" name="food_qty3" id="food_qty3" class="data_field2" placeholder="Количество">
+	</td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>11. Количество членов экипажа и пассажиров на судне</font></td>
+	<td align=left valign=top><input type="text" name="exp_crue_qty" id="exp_crue_qty" class="data_field1" placeholder="Экипаж" maxlength="2">, <input type="text" name="exp_passenger_qty" id="exp_passenger_qty" class="data_field1" placeholder="Пассажиры" maxlength="3"></td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>12. Сведения о неисправностях судовых механизмов и/или технических средств (при наличии)</font></td>
+	<td align=left valign=top><textarea name="fault" id="fault" class="data_field"></textarea></td>
+    </tr>
+    <tr>
+	<td align=right valign=top><font class=main>13. Планируемая дата и время МСК входа судна в акваторию СМП</font></td>
+	<td align=left valign=top>
+	    <input type="text" name="date_enter" id="date_enter" class="data_field1" placeholder="Дата">
+	    <SELECT name="time_enter" id="time_enter">
+		<OPTION value=0>00:00
+		<OPTION value=1>01:00
+		<OPTION value=2>02:00
+		<OPTION value=3>03:00
+		<OPTION value=4>04:00
+		<OPTION value=5>05:00
+		<OPTION value=6>06:00
+		<OPTION value=7>07:00
+		<OPTION value=8>08:00
+		<OPTION value=9>09:00
+		<OPTION value=10>10:00
+		<OPTION value=11>11:00
+		<OPTION value=12>12:00
+		<OPTION value=13>13:00
+		<OPTION value=14>14:00
+		<OPTION value=15>15:00
+		<OPTION value=16>16:00
+		<OPTION value=17>17:00
+		<OPTION value=18>18:00
+		<OPTION value=19>19:00
+		<OPTION value=20>20:00
+		<OPTION value=21>21:00
+		<OPTION value=22>22:00
+		<OPTION value=23>23:00
+	    </SELECT> <font class=main>МСК</font>
+	</td>
+    </tr>
+</table>

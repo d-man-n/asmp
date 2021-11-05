@@ -1,0 +1,56 @@
+<script type="text/javascript" src="/js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/script.js?124443"></script>
+<table align=center class=data_table>
+    <tr>
+	<td align=right valign=top><font class=main>1. Название судна:</font></td>
+	<td align="left" valign="top"><input type="text" name="ship_name" id="ship_name" class="data_field" style="text-transform: uppercase;" placeholder="Название"></td>
+    </tr>
+    <tr>
+	<td align=right valign=top>
+	    <font class=main>2. Номер</font>
+	    <select name=type_num id=type_num>
+		<option value=0>ИМО</option>
+		<option value=1>РМРС</option>
+		<option value=2>РРР</option>
+	    </select>:
+	</td>
+	<td align="left" valign="top"><input type="text" name="ship_imo" id="ship_imo" class="data_field" placeholder="Номер"></td>
+    </tr>
+    <tr>
+        <td align=right valign=top><font class=main>3. Дата и время МСК прибытия в порт</font></td>
+        <td align=left valign=top>
+            <input type="text" name="date_enter" id="date_enter" class="data_field1" placeholder="Дата">
+            <SELECT name="time_enter" id="time_enter">
+                <OPTION value=0>00:00
+                <OPTION value=1>01:00
+                <OPTION value=2>02:00
+                <OPTION value=3>03:00
+                <OPTION value=4>04:00
+                <OPTION value=5>05:00
+                <OPTION value=6>06:00
+                <OPTION value=7>07:00
+                <OPTION value=8>08:00
+                <OPTION value=9>09:00
+                <OPTION value=10>10:00
+                <OPTION value=11>11:00
+                <OPTION value=12>12:00
+                <OPTION value=13>13:00
+                <OPTION value=14>14:00
+                <OPTION value=15>15:00
+                <OPTION value=16>16:00
+                <OPTION value=17>17:00
+                <OPTION value=18>18:00
+                <OPTION value=19>19:00
+                <OPTION value=20>20:00
+                <OPTION value=21>21:00
+                <OPTION value=22>22:00
+                <OPTION value=23>23:00
+            </SELECT> <font class="main">МСК</font>
+        </td>
+    </tr>
+    <tr>
+        <td align=right valign=top><font class=main>4. В случае прихода в морской порт, находящийся в акватории СМП</font></td>
+        <td align=left valign=top><input type="text" name="port1" id="port1" class="data_field" style="text-transform: uppercase;" placeholder="Название"></td>
+    </tr>
+</table>

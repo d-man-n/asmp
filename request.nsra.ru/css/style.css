@@ -1,0 +1,124 @@
+body
+    {
+    background-color: #eaf3fc;;
+    margin: 0;
+    padding: 0;
+    }
+
+h1
+    {
+    font: bold 20px arial;
+    color: #0130a7;
+    margin: 0;
+    padding: 0;
+    }
+
+.main
+    {
+    font: normal 14px arial;
+    color: #000000;
+    }
+
+.main2
+    {
+    color: #7c94be;
+    font: bold 12px arial;
+    }
+
+.main1
+    {
+    font: normal 12px arial;
+    color: #1c1d1d;
+    }
+
+
+.main_bg
+    {
+    position: relative;
+    width: 1161px;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    }
+
+.b1, .b2, .b3
+    {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 460px;
+    border: 2px solid #0000ff; 
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    }
+    
+.request_tab input, select
+    {
+    width: 500px;
+    }
+    
+.request_tab td
+    {
+    padding: 5px 0;
+    }
+    
+table tr td
+    {
+    padding: 5px;
+    }
+    
+.ice_cat_info
+    {
+    position: relative; 
+    float: right; 
+    padding: 2px 5px; 
+    margin: 0 2px; 
+    width: 10px; 
+    height: 16px; 
+    background: #efefef; 
+    cursor: pointer;
+    }
+    
+.ice_cat_info_div
+    {
+    position: relative;
+    right: 200px;
+    padding: 2px 5px; 
+    margin: 0; 
+    width: 250px; 
+    background: #efefef; 
+    font: normal 14px tahoma;
+    }
+    
+a:link {color: #203e87; font: normal 16px arial; text-decoration: none;}
+a:visited {color: #203e87; font: normal 16px arial; text-decoration: none;}
+a:hover {color: #205bb5; font: normal 16px arial; text-decoration: underline;}
+
+tr.list
+    {
+    background: url("http://nsra.ru/images/list_bg.png") repeat-x #ffffff;
+    }
+
+.selship td {border-bottom: 1px solid #efefef; background: none;}
+.selship td {border-bottom: 1px solid #efefef;}
+.selship {backgroung: none; cursor: pointer; color: #000;}
+.selship:hover {background: #898989; cursor: pointer; color: #fff;}
+.selhship td 
+    {
+    background: #676767;
+    color: #ffffff;
+    }
+
+
+#upload{
+margin:30px; padding:5px;
+font:bold 13px Arial;
+text-align:center;
+background:#f2f2f2;
+color:#565656;
+border:1px solid #ccc;
+width:120px;
+cursor:pointer !important;
+-moz-border-radius:5px; -webkit-border-radius:5px;
+}
